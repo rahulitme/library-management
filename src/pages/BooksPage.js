@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const departments = {
   "Computer Science": [
-    { title: "Introduction to Algorithms", author: "Thomas H. Cormen", year: 2009, description: "A comprehensive update to the leading algorithms text, with new material on matchings in bipartite graphs, online algorithms, machine learning, and other topics." },
+    { title: "Introduction to Algorithm", author: "Thomas H. Cormen", year: 2009, description: "A comprehensive update to the leading algorithms text, with new material on matchings in bipartite graphs, online algorithms, machine learning, and other topics." },
     { title: "Clean Code", author: "Robert C. Martin", year: 2008, description: "A handbook of agile software craftsmanship that helps programmers write better code." },
     { title: "The Pragmatic Programmer", author: "Andrew Hunt, David Thomas", year: 1999, description: "A guide to software craftsmanship, covering both the art and the science of software development." },
     { title: "Design Patterns", author: "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides", year: 1994, description: "A classic book on software design patterns that has influenced countless developers." },
