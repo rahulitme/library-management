@@ -1,0 +1,61 @@
+/* BooksPage.css */
+
+.books-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .books-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .books-title {
+    font-size: 2.5em;
+    color: #4a90e2;
+  }
+  
+  .books-subtitle {
+    font-size: 1.2em;
+    color: #888;
+  }
+  
+  .department-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .department-title {
+    font-size: 1.8em;
+    color: #4a90e2;
+    margin-bottom: 15px;
+  }
+  
+  .book-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .book-item {
+    font-size: 1.1em;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .book-name {
+    color: #333;
+  }
+  
+  .book-item:last-child {
+    border-bottom: none;
+  }
+  
+  .book-item:hover .book-name {
+    color: #4a90e2;
+  }
+  
