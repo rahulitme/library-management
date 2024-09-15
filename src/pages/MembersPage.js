@@ -1,51 +1,72 @@
-import React from 'react';
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { Github, Linkedin, Twitter, ChevronDown } from 'lucide-react'
 
-// Define the MembersPage component
-function MembersPage() {
+export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
   return (
-    <div>
-      <div>Here is a list of all the members.</div>
+    <header className="bg-gray-800 text-white p-4">
+      <nav className="container mx-auto flex items-center justify-between">
+        <ul className="flex space-x-4">
+          <li>
+            <Link to="/" className="hover:text-gray-300">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/books" className="hover:text-gray-300">
+              Books
+            </Link>
+          </li>
+          <li>
+            <Link to="/add-book" className="hover:text-gray-300">
+              Add Book
+            </Link>
+          </li>
+          <li>
+            <button 
+              onClick={toggleMenu} 
+              className="flex items-center space-x-1 hover:text-gray-300 focus:outline-none"
+              aria-haspopup="true"
+              aria-expanded={isMenuOpen}
+            >
+              <span>Members</span>
+              <ChevronDown size={16} className={`transform transition-transform ${isMenuOpen ? 'rotate-180' : ''}`} />
+            </button>
+          </li>
+        </ul>
 
-      <InputGroup className="mb-3">
-        <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
-        <Form.Control
-          placeholder="Username"
-          aria-label="Username"
-          aria-describedby="basic-addon1"
-        />
-      </InputGroup>
-
-      <InputGroup className="mb-3">
-        <Form.Control
-          placeholder="Recipient's username"
-          aria-label="Recipient's username"
-          aria-describedby="basic-addon2"
-        />
-        <InputGroup.Text id="basic-addon2">@example.com</InputGroup.Text>
-      </InputGroup>
-
-      <Form.Label htmlFor="basic-url">Your vanity URL</Form.Label>
-      <InputGroup className="mb-3">
-        <InputGroup.Text id="basic-addon3">
-          https://example.com/users/
-        </InputGroup.Text>
-        <Form.Control id="basic-url" aria-describedby="basic-addon3" />
-      </InputGroup>
-
-      <InputGroup className="mb-3">
-        <InputGroup.Text>$</InputGroup.Text>
-        <Form.Control aria-label="Amount (to the nearest dollar)" />
-        <InputGroup.Text>.00</InputGroup.Text>
-      </InputGroup>
-
-      <InputGroup>
-        <InputGroup.Text>With textarea</InputGroup.Text>
-        <Form.Control as="textarea" aria-label="With textarea" />
-      </InputGroup>
-    </div>
-  );
+        {/* Full menu toggled when clicking "Members" */}
+        {isMenuOpen && (
+          <div className="mt-4">
+            <ul className="flex space-x-4">
+              <li>
+                <Link to="https://linkedin.com" className="hover:text-gray-300 flex items-center">
+                  <Linkedin size={16} className="mr-2" />
+                  LinkedIn
+                </Link>
+              </li>
+              <li>
+                <Link to="https://github.com" className="hover:text-gray-300 flex items-center">
+                  <Github size={16} className="mr-2" />
+                  GitHub
+                </Link>
+              </li>
+              <li>
+                <Link to="https://twitter.com" className="hover:text-gray-300 flex items-center">
+                  <Twitter size={16} className="mr-2" />
+                  Twitter
+                </Link>
+              </li>
+            </ul>
+          </div>
+        )}
+      </nav>
+    </header>
+  )
 }
-
-export default MembersPage;

@@ -25,9 +25,18 @@ function Navbar() {
         </li>
         <li>
           <NavLink to="/members" className={({ isActive }) => (isActive ? 'active' : '')}>
+          IAssistance
+          </NavLink>
+          </li>
+          <li>
+          <NavLink to="/AIAssistant" className={({ isActive }) => (isActive ? 'active' : '')}>
             Members
           </NavLink>
-        </li>
+          </li>
+          <NavLink to="/BookBorrow" className={({ isActive }) => (isActive ? 'active' : '')}>
+          BookBorrow
+        </NavLink>
+        
       </ul>
     </nav>
   );

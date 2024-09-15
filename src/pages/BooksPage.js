@@ -8,7 +8,7 @@ const departments = {
     { title: "Design Patterns", author: "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides", year: 1994, description: "A classic book on software design patterns that has influenced countless developers." },
     { title: "Code Complete", author: "Steve McConnell", year: 2004, description: "A practical handbook of software construction that provides developers with a clear and concise guide to writing high-quality code." },
     { title: "Artificial Intelligence: A Modern Approach", author: "Stuart Russell, Peter Norvig", year: 2020, description: "The leading textbook in Artificial Intelligence, now updated with new content on robotics, machine learning, and more." },
-    { title: "Database System Concepts", author: "Abraham Silberschatz, Henry F. Korth, S. Sudarshan", year: 2019, description: "A comprehensive introduction to database systems, covering both theory and practice." }
+    { title: "Database System Concept", author: "Abraham Silberschatz, Henry F. Korth, S. Sudarshan", year: 2019, description: "A comprehensive introduction to database systems, covering both theory and practice." }
   ],
   "Mathematics": [
     { title: "Calculus", author: "James Stewart", year: 2015, description: "A comprehensive guide to calculus, covering limits, derivatives, integrals, and their applications." },
