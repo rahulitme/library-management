@@ -9,7 +9,7 @@ import AIAssistant from './pages/AIAssistant';
 import BookBorrow from './pages/BookBorrow';
 
 import './styles/index.css';
-import './styles/App.css';
+// import './styles/App.css';
 
 function App() {
   return (
@@ -27,6 +27,6 @@ function App() {
       </div>
     </Router>
   );
-}
+} 
 
 export default App;
