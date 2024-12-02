@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .mission {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .statistics {
+    background-color: #e6f7ff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .stats-grid {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .stats-grid div h3 {
+    font-size: 36px;
+    color: #003366;
+  }
+  
+  .recruiters {
+    padding: 20px;
+    text-align: center;
+    background-color: #fdf6e3;
+  }
+  
+  .footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-grid {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+  }
+  
+  .footer-grid ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-grid ul li {
+    margin-bottom: 8px;
+  }
+  
+  .social-icons span {
+    font-size: 24px;
+    margin: 0 5px;
+  }
+  
