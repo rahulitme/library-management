@@ -1,72 +1,194 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --background-color: #f4f6f7;
+  --text-color: #2c3e50;
+  --accent-color: #e74c3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-  }
-  
-  /* Header */
-  .header {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .mission {
-    background-color: #f9f9f9;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .statistics {
-    background-color: #e6f7ff;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .stats-grid {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .stats-grid div h3 {
-    font-size: 36px;
-    color: #003366;
-  }
-  
-  .recruiters {
-    padding: 20px;
-    text-align: center;
-    background-color: #fdf6e3;
-  }
-  
-  .footer {
-    background-color: #003366;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.header {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.mission {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.statistics {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stats-grid > div {
+  background-color: var(--background-color);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.stats-grid > div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stats-grid h3 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.recruiters {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.student-inquiry, 
+.student-registration {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input, 
+textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer h3 {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer ul li:hover {
+  color: var(--primary-color);
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.social-icons span:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .stats-grid,
   .footer-grid {
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .footer-grid ul {
-    list-style-type: none;
-    padding: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .stats-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
   }
-  
-  .footer-grid ul li {
-    margin-bottom: 8px;
+
+  .header h1 {
+    font-size: 2rem;
   }
-  
-  .social-icons span {
-    font-size: 24px;
-    margin: 0 5px;
-  }
-  
+}

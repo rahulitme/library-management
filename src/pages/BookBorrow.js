@@ -13,12 +13,12 @@ const BookBorrow = () => {
     <div>
       {/* Navigation bar */}
       <div className="navbar">
-        <a href="javascript:void(0)">Home</a>
-        <a href="javascript:void(0)">Books</a>
-        <a href="javascript:void(0)">Add Book</a>
-        <a href="javascript:void(0)">Assistance</a>
-        <a href="javascript:void(0)">Members</a>
-        <a href="javascript:void(0)" onClick={toggleSidebar}>BookBorrow</a>
+        <button className="link-button">Home</button>
+        <button className="link-button">Books</button>
+        <button className="link-button">Add Book</button>
+        <button className="link-button">Assistance</button>
+        <button className="link-button">Members</button>
+        <button className="link-button" onClick={toggleSidebar}>BookBorrow</button>
       </div>
 
       {/* Conditionally render the sidebar */}

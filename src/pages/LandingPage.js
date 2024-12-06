@@ -46,6 +46,50 @@ const LandingPage = () => {
         <p>[Logos or names of companies go here]</p>
       </section>
 
+      {/* Student Inquiry Form */}
+      <section className="student-inquiry">
+        <h2>Student Inquiry</h2>
+        <form>
+          <div>
+            <label htmlFor="inquiry-name">Name:</label>
+            <input type="text" id="inquiry-name" name="name" required />
+          </div>
+          <div>
+            <label htmlFor="inquiry-email">Email:</label>
+            <input type="email" id="inquiry-email" name="email" required />
+          </div>
+          <div>
+            <label htmlFor="inquiry-message">Message:</label>
+            <textarea id="inquiry-message" name="message" required></textarea>
+          </div>
+          <button type="submit">Submit Inquiry</button>
+        </form>
+      </section>
+
+      {/* Student Registration Form */}
+      <section className="student-registration">
+        <h2>Student Registration</h2>
+        <form>
+          <div>
+            <label htmlFor="register-name">Name:</label>
+            <input type="text" id="register-name" name="name" required />
+          </div>
+          <div>
+            <label htmlFor="register-email">Email:</label>
+            <input type="email" id="register-email" name="email" required />
+          </div>
+          <div>
+            <label htmlFor="register-password">Password:</label>
+            <input type="password" id="register-password" name="password" required />
+          </div>
+          <div>
+            <label htmlFor="register-confirm-password">Confirm Password:</label>
+            <input type="password" id="register-confirm-password" name="confirm-password" required />
+          </div>
+          <button type="submit">Register</button>
+        </form>
+      </section>
+
       {/* Footer */}
       <footer className="footer">
         <div className="footer-grid">
