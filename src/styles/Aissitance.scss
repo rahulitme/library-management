@@ -1,0 +1,107 @@
+.ai-assistant-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.ai-assistant-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ai-assistant-overlay:hover {
+  opacity: 1;
+}
+
+.ai-assistant-reserve-container {
+  text-align: center;
+}
+
+.ai-assistant-reserve-btn {
+  background-color: #4299e1;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s;
+}
+
+.ai-assistant-reserve-btn:hover {
+  background-color: #3182ce;
+}
+
+.ai-assistant-details {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  z-index: 20;
+}
+
+.ai-assistant-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.ai-assistant-subtitle {
+  color: #718096;
+  margin-bottom: 0.75rem;
+}
+
+.ai-assistant-price {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.ai-assistant-price-icon {
+  margin-right: 0.5rem;
+  color: #718096;
+}
+
+.ai-assistant-additional-info {
+  margin-top: 1rem;
+}
+
+.ai-assistant-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ai-assistant-location,
+.ai-assistant-date {
+  display: flex;
+  align-items: center;
+}
+
+.ai-assistant-location-icon,
+.ai-assistant-date-icon {
+  margin-right: 0.5rem;
+  color: #718096;
+}
+
+.ai-assistant-location-text,
+.ai-assistant-date-text {
+  color: #4a5568;
+}
+
+.ai-assistant-disclaimer {
+  font-size: 0.875rem;
+  color: #a0aec0;
+  font-style: italic;
+}
