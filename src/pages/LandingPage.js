@@ -1,7 +1,25 @@
-import React from 'react';
-import './LandingPage.css'; // Add a CSS file for styling
+import React, { useState, useEffect } from 'react';
+import './LandingPage.css'; 
+
+// Add a CSS file for styling
 
 const LandingPage = () => {
+  const [faculties, setFaculties] = useState(0);
+  const [programs, setPrograms] = useState(0);
+  const [research, setResearch] = useState(0);
+  const [placements, setPlacements] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFaculties((prev) => (prev < 100 ? prev + 1 : prev));
+      setPrograms((prev) => (prev < 50 ? prev + 1 : prev));
+      setResearch((prev) => (prev < 30 ? prev + 1 : prev));
+      setPlacements((prev) => (prev < 200 ? prev + 1 : prev));
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div>
       {/* Header */}
@@ -22,19 +40,19 @@ const LandingPage = () => {
         <h2>A Place for Service, Empower, Career</h2>
         <div className="stats-grid">
           <div>
-            <h3>0</h3>
+            <h3>{faculties}</h3>
             <p>FACULTIES</p>
           </div>
           <div>
-            <h3>0</h3>
+            <h3>{programs}</h3>
             <p>PROGRAMS</p>
           </div>
           <div>
-            <h3>0</h3>
+            <h3>{research}</h3>
             <p>RESEARCH AND DEVELOPMENT</p>
           </div>
           <div>
-            <h3>0</h3>
+            <h3>{placements}</h3>
             <p>PLACEMENTS</p>
           </div>
         </div>

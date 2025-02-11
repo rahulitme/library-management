@@ -19,14 +19,13 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
+
           <Route path="/home" element={<HomePage />} />
+
+          
+
           <Route path="/books" element={<BooksPage />} />
-          <ul>
-  <li><a href="default.asp">Home</a></li>
-  <li><a href="news.asp">News</a></li>
-  <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">About</a></li>
-</ul>
+
           <Route path="/add-book" element={<AddBookPage />} />
           <Route path="/members" element={<MembersPage />} />
           <Route path="/AIAssistant" element={<AIAssistant />} />
@@ -34,6 +33,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    
   );
 }
 

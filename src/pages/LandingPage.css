@@ -84,18 +84,34 @@ body {
   padding: 4rem 2rem;
 }
 
-.student-inquiry, 
-.student-registration {
-  max-width: 600px;
+.student-inquiry
+{
+
+  max-width: 400px;
   margin: 0 auto;
   padding: 4rem 2rem;
-  background-color: white;
+  background-color: rgb(202, 42, 42);
+  padding: 10px;
+  margin: 50px;
+}
+
+.student-registration {
+
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: rgb(77, 11, 11);
+  padding: 10px;
+  position: relative;
+
+  left: 200px;
+  top : -500px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 form div {
