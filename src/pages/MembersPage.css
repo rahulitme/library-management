@@ -1,71 +1,60 @@
-.header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.5rem;
-}
+/* Book.css */
 
-.header-title {
-  font-size: 1.875rem;
-  font-weight: bold;
-  text-align: center;
-  color: #333;
-  margin-bottom: 1.5rem;
-}
-
-.card-grid {
+.book-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
 }
 
-.card {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 1rem;
-}
-
-.card-title {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #222;
-  margin-bottom: 0.5rem;
-}
-
-.card-text {
-  font-size: 0.875rem;
-  color: #555;
-  margin-bottom: 1rem;
-}
-
-.card-button {
-  width: 100%;
-  background-color: #007bff;
-  color: white;
-  font-weight: 500;
-  padding: 0.5rem;
-  border-radius: 4px;
+.book-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   text-align: center;
-  display: block;
-  text-decoration: none;
-  transition: background 0.3s;
+  overflow: hidden;
 }
 
-.card-button:hover {
-  background-color: #0056b3;
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.book-icon {
+  font-size: 2rem;
+}
+
+.book-title {
+  font-size: 1.5rem;
+  color: #4a90e2;
+  margin: 10px 0;
+}
+
+.book-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.book-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.book-info {
+  font-size: 0.9rem;
+  color: #444;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .book-container {
+    grid-template-columns: 1fr;
+  }
 }

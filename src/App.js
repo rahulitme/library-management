@@ -7,10 +7,12 @@ import HomePage from './pages/HomePage';
 import BooksPage from './pages/BooksPage';
 import AddBookPage from './pages/AddBookPage';
 import MembersPage from './pages/MembersPage';
-import AIAssistant from './pages/AIAssistant';
+// import AIAssistant from './pages/AIAssistant';
 import BookBorrow from './pages/BookBorrow';
 import './styles/index.css';
 import './styles/App.css';
+import Chat from "./components/Chat";
+
 
 function App() {
   return (
@@ -28,7 +30,7 @@ function App() {
 
           <Route path="/add-book" element={<AddBookPage />} />
           <Route path="/members" element={<MembersPage />} />
-          <Route path="/AIAssistant" element={<AIAssistant />} />
+          <Route path="/Chat" element={<Chat />} />
           <Route path="/BookBorrow" element={<BookBorrow />} />
         </Routes>
       </div>

@@ -50,7 +50,7 @@ const LandingPage = () => {
             icon={<Bot className="text-pink-300" size={48} />} 
             title="AI Assistant" 
             description="Get help from our AI librarian" 
-            link="/AIAssistant" 
+            link="/Chat" 
           />
         </div>
       </div>

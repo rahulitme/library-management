@@ -63,8 +63,8 @@ function Navbar() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/AIAssistant" className={({ isActive }) => (isActive ? 'active' : '')}>
-            AI
+          <NavLink to="/Chat" className={({ isActive }) => (isActive ? 'active' : '')}>
+          Chat
           </NavLink>
         </li>
         <li>
