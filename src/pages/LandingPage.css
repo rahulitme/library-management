@@ -90,7 +90,7 @@ body {
   max-width: 400px;
   margin: 0 auto;
   padding: 4rem 2rem;
-  background-color: rgb(202, 42, 42);
+  background-color: rgb(42, 191, 202);
   padding: 10px;
   margin: 50px;
 }
@@ -100,11 +100,10 @@ body {
   max-width: 400px;
   margin: 0 auto;
   padding: 4rem 2rem;
-  background-color: rgb(77, 11, 11);
-  padding: 10px;
+  background-color: rgb(42, 191, 202); padding: 10px;
   position: relative;
 
-  left: 200px;
+  left: 300px;
   top : -500px;
 }
 

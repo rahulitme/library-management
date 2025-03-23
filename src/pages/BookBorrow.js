@@ -9,11 +9,11 @@ const BookBorrow = () => {
   };
 
   return (
-    <div className="container">
+    <div className="book-borrow-container">
       <div className="card">
-        <h1 className="title">Borrow Your Favorite Books</h1>
+        <h1 className="title">📚 Borrow Your Favorite Books</h1>
         <p className="description">
-          Explore a vast collection of books and borrow them with ease.
+          Discover a world of books and borrow them effortlessly. Your gateway to knowledge awaits!
         </p>
         <button className="toggle-btn" onClick={toggleSidebar}>
           {isSidebarVisible ? "Hide Sidebar" : "Show Sidebar"}
@@ -22,11 +22,11 @@ const BookBorrow = () => {
 
       {isSidebarVisible && (
         <div className="sidebar">
-          <h2>Sidebar Menu</h2>
-          <ul>
-            <li>Available Books</li>
-            <li>My Borrowed Books</li>
-            <li>Return a Book</li>
+          <h2 className="sidebar-title">📖 Sidebar Menu</h2>
+          <ul className="sidebar-menu">
+            <li className="menu-item">📚 <a href="/available-books">Available Books</a></li>
+            <li className="menu-item">📂 <a href="/borrowed-books">My Borrowed Books</a></li>
+            <li className="menu-item">🔄 <a href="/return-book">Return a Book</a></li>
           </ul>
         </div>
       )}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './LandingPage.css'; 
 
+
 // Add a CSS file for styling
 
 const LandingPage = () => {
@@ -24,7 +25,7 @@ const LandingPage = () => {
     <div>
       {/* Header */}
       <header className="header">
-        <h1>Welcome to XYZ College</h1>
+        <h1>Indian Institute of Science (IISc)</h1>
       </header>
 
       {/* Mission Section */}
@@ -66,7 +67,7 @@ const LandingPage = () => {
 
       {/* Student Inquiry Form */}
       <section className="student-inquiry">
-        <h2>Student Inquiry</h2>
+        <h2>Student Login</h2>
         <form>
           <div>
             <label htmlFor="inquiry-name">Name:</label>
@@ -86,7 +87,7 @@ const LandingPage = () => {
 
       {/* Student Registration Form */}
       <section className="student-registration">
-        <h2>Student Registration</h2>
+        <h2>Faculty Login</h2>
         <form>
           <div>
             <label htmlFor="register-name">Name:</label>

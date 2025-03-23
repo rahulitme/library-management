@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
+
 function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
     <nav style={styles.navbar}>
       <div className="navbar-logo">
-        <Link to="/" style={styles.logo}>Library Management</Link>
+        <Link to="/" style={styles.logo}></Link>
       </div>
       
       <ul style={styles.navList}>
@@ -27,17 +28,17 @@ function Navbar() {
           {dropdownOpen && (
             <ul style={styles.dropdownMenu}>
               <li>
-                <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
+                <NavLink to="/AboutPage" className={({ isActive }) => (isActive ? 'active' : '')}>
                   <button style={styles.dropdownMenuItem}>About</button>
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/services" className={({ isActive }) => (isActive ? 'active' : '')}>
+                <NavLink to="/ServicesPage" className={({ isActive }) => (isActive ? 'active' : '')}>
                   <button style={styles.dropdownMenuItem}>Services</button>
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
+                <NavLink to="/Contact" className={({ isActive }) => (isActive ? 'active' : '')}>
                   <button style={styles.dropdownMenuItem}>Contact</button>
                 </NavLink>
               </li>
@@ -45,9 +46,9 @@ function Navbar() {
           )}
         </li>
 
-        <li><NavLink to="/books"><button style={styles.button}>Books</button></NavLink></li>
+        <li><NavLink to="/books"><button style={styles.button}>Departments</button></NavLink></li>
         <li><NavLink to="/add-book"><button style={styles.button}>Add Book</button></NavLink></li>
-        <li><NavLink to="/members"><button style={styles.button}>Members</button></NavLink></li>
+        <li><NavLink to="/members"><button style={styles.button}>Faculty</button></NavLink></li>
         <li><NavLink to="/chat"><button style={styles.button}>Chat</button></NavLink></li>
         <li><NavLink to="/bookborrow"><button style={styles.button}>Book Borrow</button></NavLink></li>
       </ul>

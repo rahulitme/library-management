@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+.about-container {
+    text-align: center;
+    padding: 60px 20px;
+    margin: auto;
+    max-width: 800px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin-top: 40px;
+    transition: transform 0.3s ease;
+}
+
+.about-container:hover {
+    transform: translateY(-5px);
+}
+
+h1, h2, h3 {
+    margin: 20px 0;
+    color: #2c3e50;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    margin: 8px 0;
+    padding: 10px;
+    background-color: #eaf0f6;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #d4e4f4;
+}
+
+.achievements {
+    font-size: 28px;
+    color: #2980b9;
+    margin: 30px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    margin-top: 40px;
+    color: #7f8c8d;
+    font-size: 16px;
+    text-align: center;
+}
